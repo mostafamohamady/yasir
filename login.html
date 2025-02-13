@@ -8,91 +8,114 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="login-container">
-      <div class="login-page">
-        <div class="logo-container">
-          <div class="behind-logo"></div>
-          <div class="logo"></div>
-          <div class="logo1"></div>
-          <div class="logo2"></div>
-          <div class="logo3"></div>
+    <div class="loginpage">
+      <header>
+        <div class="container">
+         <div class="header">
+          <div class="row justify-content-md-between">
+            <div class="col-3">
+              <a class="" > عودة الى المنصة<img src=""> </a>
+              <a class="" > <img src="imges/Yasir_Logo_Horizontal.svg" alt=""></a>
+          </div>
+            <div class="col-3">
+              <a class="" > <img src="imges/MOJ_Logo.svg" alt=""></a>
+              <a class="" >English</a>
+          </div>
+          </div>
+         </div>
+         
         </div>
-
-        <!-- <div class="start-btn-container">
-        <button type="button" class="btn startBtn" id="startBtn" >إبدأ</button>
-      </div> -->
-        <div class="tanfiz-title">
-          <h3>الادارة العامة للتنفيذ</h3>
-
-          <div class="text-container"><span>وزارة العدل</span></div>
-        </div>
-
-        <div class="login-form">
-          <form action="#" method="post">
-            <h2 class="text-center mb-5">تسجيل الدخول</h2>
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control form-control-uname"
-                placeholder="اسم المستخدم"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div class="input-group mb-3">
-              <input
-                type="password"
-                id="inputPass"
-                class="form-control form-control-password"
-                placeholder="كلمةالمرور"
-                aria-label="Password"
-                aria-describedby="basic-addon1"
-              />
-              <div class="show-password" id="showPasswprd">
-                <img
-                  id="showPassIcon"
-                  src="imges/showpass.svg"
-                  alt="show pass"
-                />
-                <img
-                  id="hidePassIcon"
-                  src="imges/hidepass.svg"
-                  alt="show pass"
+  
+      </header>
+      
+  
+  
+      <div class="login-container">
+        <div class="login-page">
+          <div class="logo-container">
+            <img src="imges/Group 109481.svg" alt="">
+           
+          </div>
+  
+     
+  
+          <div class="login-form">
+            <form action="#" method="post">
+              <h2 class="text-center mb-5">تسجيل الدخول</h2>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-uname"
+                  placeholder="اسم المستخدم"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
                 />
               </div>
-            </div>
-            <p class="text-center text-primary my-5">
-              نسيت كلة المرور؟
-              <a href="#" class="text-secondary text-decoration-none"
-                >اطلب المساعدة <img src="imges/help.svg" alt="help-icon"
-              /></a>
-            </p>
-            <div class="text-center">
-              <button
-                type="submit"
-                class="btn btn-primary btn-primary--enter mb-3"
-              >
-                دخول
-                <img
-                  src="imges/MOJ_Login_Animation.gif"
-                  alt="login animation icon "
+              <div class="input-group mb-3">
+                <input
+                  type="password"
+                  id="inputPass"
+                  class="form-control form-control-password"
+                  placeholder="كلمةالمرور"
+                  aria-label="Password"
+                  aria-describedby="basic-addon1"
                 />
-              </button>
-            </div>
-          </form>
+                <div class="show-password" id="showPasswprd">
+                  <img
+                    id="showPassIcon"
+                    src="imges/showpass.svg"
+                    alt="show pass"
+                  />
+                  <img
+                    id="hidePassIcon"
+                    src="imges/hidepass.svg"
+                    alt="show pass"
+                  />
+                </div>
+              </div>
+              <p class="text-center text-primary my-5">
+                هل تواجه أي مشكلة؟             
+                
+                <a href="#" class="text-secondary text-decoration-none"
+                  >اطلب المساعدة <img src="imges/help.svg" alt="help-icon"
+                /></a>
+              </p>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-primary--enter mb-3"
+                >
+                  دخول
+                  <!-- <img
+                    src="imges/MOJ_Login_Animation.gif"
+                    alt="login animation icon "
+                  /> -->
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="leftanimation"></div>
       </div>
-      <div class="leftanimation"></div>
+  
+      <footer class="login-footer">
+        <div class="footer-container text-center">
+          <p>
+            جميع الحقوق محفوظة لـ منصة يَسِّر<span>&copy; </span> 2025
+          </p>
+          <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
+        </div>
+      </footer>
+
+
+
     </div>
 
-    <footer class="login-footer">
-      <div class="footer-container text-center">
-        <p>
-          جميع الحقوق محفوظة لـ الإدارة العامة للتنفيذ <span>&copy; </span> 2024
-        </p>
-        <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
-      </div>
-    </footer>
+   
+
+
+
+
 
     <script src="js/gsap.min.js"></script>
 
@@ -105,7 +128,8 @@
       let inputPassword = document.querySelector("#inputPass");
       let showPassIcon = document.querySelector("#showPassIcon");
       let hidePassIcon = document.querySelector("#hidePassIcon");
-
+      
+      hidePassIcon.style.display = "none";
       showPassBtn.addEventListener("click", function () {
         if (inputPassword.type === "password") {
           inputPassword.type = "text";
