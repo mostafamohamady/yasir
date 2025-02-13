@@ -27,7 +27,7 @@
 body {
   font-family: "Readex Pro", sans-serif;
   font-size: 1rem;
-  background: linear-gradient(176deg, #DDE8EE 0%, #F7FAFB 100%);
+  background: linear-gradient(176deg, #dde8ee 0%, #f7fafb 100%);
   color: var(--primary-fcolor);
 }
 
@@ -44,6 +44,19 @@ ul {
 
 .text-secondary {
   color: var(--textsecndary-color) !important;
+}
+
+.leftanimation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 25%;
+  background-image: url(../imges/Yasir_Main_BG.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+  left: 0;
 }
 
 /*Components  */
