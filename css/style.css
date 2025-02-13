@@ -1,3 +1,4 @@
+/*Abstrats*/
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
 :root {
   --main-btn-border-color: #b39d74;
@@ -17,6 +18,7 @@
   --headline-border-color: #cddae0;
 }
 
+/*Global --> fonts-body */
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +46,9 @@ ul {
   color: var(--textsecndary-color) !important;
 }
 
-/* //font color*/
+/*Components  */
+/*Layout*/
+/*Pages*/
 /* login page - part one of animation setup */
 .login-page {
   height: 101vh;

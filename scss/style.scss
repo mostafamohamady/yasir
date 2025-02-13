@@ -1,168 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
 
-:root {
-  --main-btn-border-color: #b39d74;
-  --main-btn-background-color: #b39d74;
-  --main-btn-fcolor: #b39d74;
-  --main-btnstart-fcolor: #b39d74;
-  --main-btnprimary-fcolor: #ffffff;
-  --footer-fcolor: #3f6272;
-  --primary-fcolor: #3f6272;
-  --input-border: #d2dae3;
-  --input-box-shadow: #6c5b3e0d;
-  --input-placeholder-color: #b8c3c7;
-  --textprimary-color: #3f6272;
-  --textsecndary-color: #b39d74;
-  --navlink-fcolor: #577c8d;
-  --navlink-activ-fcolor: #b39d74;
-  --headline-border-color: #cddae0;
-}
+/*Abstrats*/
+@import'abstracts/variables';
 
-* {
-  padding: 0;
-  margin: 0;
-}
+/*Global --> fonts-body */
+@import'Global/reset';
 
-body {
-  font-family: "Readex Pro", sans-serif;
-  font-size: 1rem;
-  background: linear-gradient(
-    176deg,
-    rgba(213, 221, 232, 1) 0%,
-    rgba(250, 252, 255, 1) 100%
-  );
-  color: var(--primary-fcolor);
-}
-/*font color*/
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
+/*Components  */
+@import'components/buttons';
+@import'components/cards';
+@import'components/forms';
+@import'components/modal';
 
-.text-primarytext {
-  color: var(--textprimary-color) !important;
-}
-.text-secondary {
-  color: var(--textsecndary-color) !important;
-}
-/* //font color*/
+/*Layout*/
+@import'layout/header';
+@import'layout/footer';
+@import'layout/grid';
+@import'layout/sidebar';
 
-/* login page - part one of animation setup */
 
-.login-page {
-  height: 101vh;
+/*Pages*/
+@import'pages/login';
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
 
-.logo-container {
-  position: relative;
-  z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.behind-logo {
-  height: 40vh;
-  width: 37vh;
-  position: absolute;
-  z-index: 100;
-  background-image: url("../imges/Group\ 107850.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
-.logo {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  z-index: 106;
-  background-image: url("../imges/flagkuwait.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.logo1 {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  bottom: -100px;
-  z-index: 103;
-  display: none;
-  background-image: url("../imges/logopath1.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: scale(0);
-}
-.logo2 {
-  height: 150px;
-  width: 155px;
-  position: absolute;
-  bottom: -80px;
-  z-index: 104;
-  display: none;
-  background-image: url("../imges/logopath2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: scale(0);
-}
-.logo3 {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  bottom: -40px;
-  z-index: 105;
-  display: none;
-  background-image: url("../imges/logopath3.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: scale(0);
-}
 
-.tanfiz-title {
-  display: none;
-  position: absolute;
-  top: 80%;
-  z-index: 106;
-}
 
-.login-form {
-  display: none;
-  position: absolute;
-  top: 90%;
-  z-index: 107;
-  width: 450px;
-}
 
-.start-btn-container {
-  position: absolute;
-  bottom: 20%;
-}
 
-.leftanimation {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 25%;
 
-  background-image: url("../imges/Tanfez_Shape.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  z-index: 100;
-  left: -25%;
-}
-
-.login-container {
-  overflow: hidden;
-  position: relative;
-}
 
 /* btns */
 

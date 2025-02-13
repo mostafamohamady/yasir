@@ -1,0 +1,117 @@
+
+/* login page - part one of animation setup */
+
+.login-page {
+    height: 101vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .logo-container {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .behind-logo {
+    height: 40vh;
+    width: 37vh;
+    position: absolute;
+    z-index: 100;
+    background-image: url("../imges/Group\ 107850.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 106;
+    background-image: url("../imges/flagkuwait.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo1 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: -100px;
+    z-index: 103;
+    display: none;
+    background-image: url("../imges/logopath1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(0);
+  }
+  .logo2 {
+    height: 150px;
+    width: 155px;
+    position: absolute;
+    bottom: -80px;
+    z-index: 104;
+    display: none;
+    background-image: url("../imges/logopath2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(0);
+  }
+  .logo3 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: -40px;
+    z-index: 105;
+    display: none;
+    background-image: url("../imges/logopath3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(0);
+  }
+  
+  .tanfiz-title {
+    display: none;
+    position: absolute;
+    top: 80%;
+    z-index: 106;
+  }
+  
+  .login-form {
+    display: none;
+    position: absolute;
+    top: 90%;
+    z-index: 107;
+    width: 450px;
+  }
+  
+  .start-btn-container {
+    position: absolute;
+    bottom: 20%;
+  }
+  
+  .leftanimation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 25%;
+  
+    background-image: url("../imges/Tanfez_Shape.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    z-index: 100;
+    left: -25%;
+  }
+  
+  .login-container {
+    overflow: hidden;
+    position: relative;
+  }
+  
