@@ -1,13 +1,10 @@
-
 /* login page - part one of animation setup */
 
-
-.loginpage{
-    height: 100vh;
+.loginpage {
+  height: 100vh;
 }
 
 .login-page {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,42 +12,39 @@
   position: relative;
 }
 
-.login-page .login-form .form-control-uname{
-    background-image: url(../imges/civilid.svg);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 15px) center;
-}
-
-.login-page .login-form .form-control{
-    border-radius: 40px;
-    padding: 20px 49px;
-    font-size: 1.25em;
-    border: 1px solid var(--input-border);
-    box-shadow: 0px 7px 9px var(--input-box-shadow);
-    position: relative;
-}
-.login-page .login-form .show-password {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100;
-}
-
-
-.login-page .login-form .form-control-password {
-    background-image: url(../imges/pass.svg);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 15px) center;
-    border-radius: 40px !important;
-    color: #3f6272;
+.login-page .login-form .form-control-uname {
+  background-image: url(../imges/civilid.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
 }
 
 .login-page .login-form .form-control {
-    border-radius: 40px;
-    padding: 20px 49px;
-    font-size: 1.25em;
-    border: 1px solid var(--input-border);
-    box-shadow: 0px 7px 9px var(--input-box-shadow);
-    position: relative;
+  border-radius: 40px;
+  padding: 15px 50px;
+  font-size: 1.25em;
+  border: 1px solid var(--input-border);
+  box-shadow: 0px 7px 9px var(--input-box-shadow);
+  position: relative;
+}
+.login-page .login-form .show-password {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.login-page .login-form .form-control-password {
+  background-image: url(../imges/pass.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  border-radius: 40px !important;
+  color: #3f6272;
+}
+
+.login-text-gradint {
+  background: #22499d;
+  background: linear-gradient(to top right, #22499d 22%, #c2cce5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

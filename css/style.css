@@ -7,7 +7,7 @@
   --main-btnstart-fcolor: #b39d74;
   --main-btnprimary-fcolor: #ffffff;
   --footer-fcolor: #3f6272;
-  --primary-fcolor: #3f6272;
+  --primary-fcolor: #1B3065;
   --input-border: #d2dae3;
   --input-box-shadow: #6c5b3e0d;
   --input-placeholder-color: #b8c3c7;
@@ -47,6 +47,32 @@ ul {
 }
 
 /*Components  */
+.btn-primary {
+  background: #22499D;
+  color: var(--main-btnprimary-fcolor);
+  border: unset;
+  border-radius: 45px;
+}
+.btn-primary:hover {
+  background: var(--main-btn-background-color);
+  color: var(--main-btnprimary-fcolor);
+  border: unset;
+}
+.btn-primary:focus {
+  background: var(--main-btn-background-color);
+  color: var(--main-btnprimary-fcolor);
+  border: unset;
+}
+
+.btn-primary--enter {
+  min-width: 160px;
+  padding: 14px 20px;
+}
+.btn-primary--enter img {
+  width: 50px;
+  height: auto;
+}
+
 /*Layout*/
 /*Pages*/
 /* login page - part one of animation setup */
@@ -70,7 +96,7 @@ ul {
 
 .login-page .login-form .form-control {
   border-radius: 40px;
-  padding: 20px 49px;
+  padding: 15px 50px;
   font-size: 1.25em;
   border: 1px solid var(--input-border);
   box-shadow: 0px 7px 9px var(--input-box-shadow);
@@ -93,11 +119,9 @@ ul {
   color: #3f6272;
 }
 
-.login-page .login-form .form-control {
-  border-radius: 40px;
-  padding: 20px 49px;
-  font-size: 1.25em;
-  border: 1px solid var(--input-border);
-  box-shadow: 0px 7px 9px var(--input-box-shadow);
-  position: relative;
+.login-text-gradint {
+  background: #22499d;
+  background: linear-gradient(to top right, #22499d 22%, #c2cce5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=style.css.map */

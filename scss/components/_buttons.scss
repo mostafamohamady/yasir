@@ -1,0 +1,26 @@
+.btn-primary {
+    background: #22499D;
+    color: var(--main-btnprimary-fcolor);
+    border: unset;
+    border-radius: 45px;
+    &:hover {
+      background: var(--main-btn-background-color);
+      color: var(--main-btnprimary-fcolor);
+      border: unset;
+    }
+    &:focus {
+      background: var(--main-btn-background-color);
+      color: var(--main-btnprimary-fcolor);
+      border: unset;
+    }
+  }
+  
+  .btn-primary--enter {
+    min-width: 160px;
+    padding: 14px 20px;
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+  
