@@ -10,6 +10,7 @@ body {
   font-size: 1rem;
   background: linear-gradient(176deg, #dde8ee 0%, #f7fafb 100%);
   color: var(--primary-fcolor);
+  position: relative;
 }
 /*font color*/
 ul {
@@ -31,9 +32,216 @@ ul {
   bottom: 0;
   height: 100%;
   width: 25%;
-  background-image: url(../imges/Yasir_Main_BG.svg);
+  
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 100;
   left: 0;
 }
+
+/*live chat*/
+  .live_chat{
+    position: fixed;
+    top: 80vh;
+    right: 40px;
+
+    .btn-live-chat{
+      border: none;
+      background: none;
+    }
+  }
+/*// live chat*/
+
+
+
+
+  /*aside menu */
+  .page-menu {
+    border-radius: 15px;
+    background: #ebf0f5;
+    padding: 25px;
+
+    box-shadow: 0px 6px 10px 0px rgb(217 222 227);
+
+    li.item {
+      a {
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: rgb(255 255 255 / 60%);
+        min-height: 90px;
+        align-items: center;
+        color: #577c8e;
+        position: relative;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+
+      &.active {
+        a {
+          background-color: #577c8d;
+          color: #fff;
+          position: relative;
+          z-index: 2;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            background: var(--main-btn-border-color);
+            z-index: 1;
+            bottom: -2px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+        }
+      }
+
+      .icon {
+        border-radius: 30px;
+        margin-inline-end: 10px;
+      }
+      .list-title {
+        text-align: start;
+        h6 {
+          margin-bottom: 0;
+        }
+        span {
+          font-size: 0.8rem;
+        }
+      }
+      .count {
+        font-size: 1.8rem;
+        font-weight: 400;
+        position: absolute;
+
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .main-sec {
+    margin-top: 20px;
+  
+    /*aside menu */
+    .page-menu {
+      border-radius: 15px;
+      background: #ebf0f5;
+      padding: 25px;
+  
+      box-shadow: 0px 6px 10px 0px rgb(217 222 227);
+  
+      li.item {
+        a {
+          display: flex;
+          padding: 10px 20px;
+          border-radius: 20px;
+          background-color: rgb(255 255 255 / 60%);
+          min-height: 90px;
+          align-items: center;
+          color: #577c8e;
+          position: relative;
+        }
+  
+        &:not(:last-of-type) {
+          margin-bottom: 15px;
+        }
+  
+        &.active {
+          a {
+            background-color: #577c8d;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 80%;
+              height: 2px;
+              background: var(--main-btn-border-color);
+              z-index: 1;
+              bottom: -2px;
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+            }
+          }
+        }
+  
+        .icon {
+          border-radius: 30px;
+          margin-inline-end: 10px;
+        }
+        .list-title {
+          text-align: start;
+          h6 {
+            margin-bottom: 0;
+          }
+          span {
+            font-size: 0.8rem;
+          }
+        }
+        .count {
+          font-size: 1.8rem;
+          font-weight: 400;
+          position: absolute;
+  
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+  
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  
+    /* search componnet*/
+    .seaechcontainer {
+      padding: 70px 40px;
+      background-color: #ffffff87;
+      border-radius: 40px;
+  
+      box-shadow: 0px 6px 10px 0px rgb(217 222 227);
+  
+      h2 {
+        font-weight: 300;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+      .text-gradient {
+        background: #b9a066;
+        background: linear-gradient(to right, #b9a066 0%, #75a0d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 20px;
+        font-weight: 200;
+      }
+  
+      .form-control-search {
+        background-image: url("../imges/Search_Icon.svg");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 15px) center;
+      }
+    }
+  }
+  
+
+  .inner-page {
+    min-height: 100vh;
+    background-image: url(../imges/Yasir_Main_BG.svg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  }

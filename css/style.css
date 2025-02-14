@@ -29,6 +29,7 @@ body {
   font-size: 1rem;
   background: linear-gradient(176deg, #dde8ee 0%, #f7fafb 100%);
   color: var(--primary-fcolor);
+  position: relative;
 }
 
 /*font color*/
@@ -52,11 +53,185 @@ ul {
   bottom: 0;
   height: 100%;
   width: 25%;
-  background-image: url(../imges/Yasir_Main_BG.svg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 100;
   left: 0;
+}
+
+/*live chat*/
+.live_chat {
+  position: fixed;
+  top: 80vh;
+  right: 40px;
+}
+.live_chat .btn-live-chat {
+  border: none;
+  background: none;
+}
+
+/*// live chat*/
+/*aside menu */
+.page-menu {
+  border-radius: 15px;
+  background: #ebf0f5;
+  padding: 25px;
+  box-shadow: 0px 6px 10px 0px rgb(217, 222, 227);
+}
+.page-menu li.item a {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  min-height: 90px;
+  align-items: center;
+  color: #577c8e;
+  position: relative;
+}
+.page-menu li.item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.page-menu li.item.active a {
+  background-color: #577c8d;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.page-menu li.item.active a::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: var(--main-btn-border-color);
+  z-index: 1;
+  bottom: -2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.page-menu li.item .icon {
+  border-radius: 30px;
+  margin-inline-end: 10px;
+}
+.page-menu li.item .list-title {
+  text-align: start;
+}
+.page-menu li.item .list-title h6 {
+  margin-bottom: 0;
+}
+.page-menu li.item .list-title span {
+  font-size: 0.8rem;
+}
+.page-menu li.item .count {
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page-menu li.item a {
+  text-decoration: none;
+}
+
+.main-sec {
+  margin-top: 20px;
+  /*aside menu */
+  /* search componnet*/
+}
+.main-sec .page-menu {
+  border-radius: 15px;
+  background: #ebf0f5;
+  padding: 25px;
+  box-shadow: 0px 6px 10px 0px rgb(217, 222, 227);
+}
+.main-sec .page-menu li.item a {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  min-height: 90px;
+  align-items: center;
+  color: #577c8e;
+  position: relative;
+}
+.main-sec .page-menu li.item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.main-sec .page-menu li.item.active a {
+  background-color: #577c8d;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.main-sec .page-menu li.item.active a::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: var(--main-btn-border-color);
+  z-index: 1;
+  bottom: -2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-sec .page-menu li.item .icon {
+  border-radius: 30px;
+  margin-inline-end: 10px;
+}
+.main-sec .page-menu li.item .list-title {
+  text-align: start;
+}
+.main-sec .page-menu li.item .list-title h6 {
+  margin-bottom: 0;
+}
+.main-sec .page-menu li.item .list-title span {
+  font-size: 0.8rem;
+}
+.main-sec .page-menu li.item .count {
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-sec .page-menu li.item a {
+  text-decoration: none;
+}
+.main-sec .seaechcontainer {
+  padding: 70px 40px;
+  background-color: rgba(255, 255, 255, 0.5294117647);
+  border-radius: 40px;
+  box-shadow: 0px 6px 10px 0px rgb(217, 222, 227);
+}
+.main-sec .seaechcontainer h2 {
+  font-weight: 300;
+}
+.main-sec .seaechcontainer p {
+  margin-bottom: 30px;
+}
+.main-sec .seaechcontainer .text-gradient {
+  background: #b9a066;
+  background: linear-gradient(to right, #b9a066 0%, #75a0d6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-sec .seaechcontainer p {
+  font-size: 1rem;
+  margin-top: 20px;
+  font-weight: 200;
+}
+.main-sec .seaechcontainer .form-control-search {
+  background-image: url("../imges/Search_Icon.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+}
+
+.inner-page {
+  min-height: 100vh;
+  background-image: url(../imges/Yasir_Main_BG.svg);
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 /*Components  */
@@ -86,11 +261,171 @@ ul {
   height: auto;
 }
 
+.input-button-container {
+  position: relative;
+}
+.input-button-container .form-control-inbtn {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  min-width: 160px;
+  border-radius: 40px !important;
+  z-index: 100;
+}
+
+.form-control {
+  border-radius: 40px !important;
+  padding: 20px 49px;
+  font-size: 1.25em;
+  border: 1px solid var(--input-border);
+  box-shadow: 0px 7px 9px var(--input-box-shadow);
+  position: relative;
+}
+.form-control::-moz-placeholder {
+  color: var(--input-placeholder-color);
+}
+.form-control::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.table--edit {
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+.table--edit > :not(caption) > * > * {
+  border: unset;
+}
+.table--edit thead th {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4f717e;
+  text-align: center;
+}
+.table--edit tbody tr {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgb(217, 222, 227);
+  border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.table--edit tbody tr td {
+  text-align: center;
+  font-size: 1rem;
+  color: #0c3442;
+  padding: 0.5rem 0.5rem;
+  vertical-align: middle;
+}
+.table--edit tbody tr td:first-of-type {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.table--edit tbody tr td:last-of-type {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.table--edit tbody tr td:not(:last-of-type) {
+  border-left: 1px solid #efeeeb;
+}
+.table--edit tbody tr td img {
+  margin-inline-end: 7px;
+}
+.table--edit tbody tr td .dropdown-center--edit .dropdown-toggle {
+  all: unset;
+  padding: 6px 12px;
+}
+.table--edit tbody tr td .dropdown-center--edit .dropdown-toggle::after {
+  display: none;
+}
+.table--edit tbody tr td .dropdown-center--edit .dropdown-toggle:focus {
+  background-color: #0c3442;
+  padding: 5px 10px;
+  background-color: #e2e9eb;
+  border-radius: 10px;
+}
+.table--edit tbody tr td .dropdown-center--edit .dropdown-menu {
+  border-radius: 20px;
+}
+.table--edit tbody tr:hover {
+  background-color: #f8f8f5;
+  box-shadow: 0px 0px 4px 0px rgba(177, 166, 104, 0.568);
+  transition: all 0.3s ease-in-out;
+}
+
 /*Layout*/
+.header--inner {
+  padding-top: 55px;
+}
+.header--inner .logocontainer span {
+  z-index: 2;
+  position: relative;
+  background: transparent;
+  padding: 10px;
+  font-size: 12px;
+}
+.header--inner .logocontainer span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: var(--primary-fcolor);
+  bottom: 50%;
+  z-index: 1;
+  right: 100%;
+  width: 35px;
+}
+.header--inner .logocontainer span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: var(--primary-fcolor);
+  bottom: 50%;
+  z-index: 1;
+  left: 100%;
+  width: 35px;
+}
+.header--inner .notificatio-profile {
+  display: flex;
+  justify-content: end;
+}
+.header--inner .notificatio-profile .notifiction,
+.header--inner .notificatio-profile .profile {
+  margin-inline-start: 45px;
+}
+.header--inner .notificatio-profile .profile {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #fff;
+}
+.header--inner .notificatio-profile .profile image {
+  width: 49px;
+}
+.header--inner .notificatio-profile .notifiction {
+  margin-top: 10px;
+}
+.header--inner .notificatio-profile .notifiction button {
+  border: none;
+  position: relative;
+  background: transparent;
+}
+.header--inner .notificatio-profile .notifiction button .noti-count {
+  background-color: #cb3131;
+  border-radius: 50%;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -5px;
+  line-height: 1.123;
+  text-align: center;
+  padding: 3px;
+  right: -15px;
+}
+
 /*Pages*/
 /* login page - part one of animation setup */
 .loginpage {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .login-page {
@@ -137,4 +472,44 @@ ul {
   background: linear-gradient(to top right, #22499d 22%, #c2cce5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+a.back_home {
+  color: #1a3065;
+  text-decoration: none;
+}
+
+.btn-language {
+  color: #1a3065;
+  text-decoration: none;
+  margin-inline-start: 15px;
+}
+
+.loginpage {
+  background-image: url(../imges/Yasir_Main_BG.svg);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.login-text-gradint {
+  position: relative;
+  z-index: 100;
+}
+
+.login-text-gradint::after {
+  content: "";
+  background-image: url(../imges/Yasir_Text_Highlight.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.p-help {
+  color: #3D5862;
 }/*# sourceMappingURL=style.css.map */

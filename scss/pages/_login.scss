@@ -1,7 +1,7 @@
 /* login page - part one of animation setup */
 
 .loginpage {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .login-page {
@@ -48,3 +48,43 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+a.back_home {
+  color: #1a3065;
+  text-decoration: none;
+}
+.btn-language {
+  color: #1a3065;
+  text-decoration: none;
+  margin-inline-start: 15px;
+}
+
+.loginpage{
+  background-image: url(../imges/Yasir_Main_BG.svg);
+  background-repeat: repeat-y;
+  background-size: contain;
+ }
+ .login-text-gradint{
+  position: relative;
+  z-index: 100;
+
+ }
+ .login-text-gradint::after{
+  content: "";
+  background-image: url(../imges/Yasir_Text_Highlight.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+ }
+
+.p-help{
+  color:#3D5862 ;
+  
+}
+ 

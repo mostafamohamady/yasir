@@ -1,0 +1,81 @@
+// header inner
+.header--inner {
+    padding-top: 55px;
+  
+    .logocontainer {
+      span {
+        z-index: 2;
+        position: relative;
+        background: transparent;
+        padding: 10px;
+        font-size: 12px;
+  
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 1px;
+          background: var(--primary-fcolor);
+          bottom: 50%;
+  
+          z-index: 1;
+          right: 100%;
+          width: 35px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 1px;
+          background: var(--primary-fcolor);
+          bottom: 50%;
+  
+          z-index: 1;
+          left: 100%;
+          width: 35px;
+        }
+      }
+    }
+  
+    .notificatio-profile {
+      display: flex;
+      justify-content: end;
+  
+      .notifiction,
+      .profile {
+        margin-inline-start: 45px;
+      }
+      .profile {
+        border-radius: 50%;
+        padding: 2px;
+        background-color: #fff;
+        image {
+          width: 49px;
+        }
+      }
+      .notifiction {
+        margin-top: 10px;
+        button {
+          border: none;
+          position: relative;
+          background: transparent;
+  
+          .noti-count {
+            background-color: #cb3131;
+            border-radius: 50%;
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            bottom: -5px;
+            line-height: 1.123;
+            text-align: center;
+            padding: 3px;
+            right: -15px;
+          }
+        }
+      }
+    }
+  }
+  
+  // // inner header
