@@ -282,6 +282,30 @@ ul {
   height: auto;
 }
 
+.c-cardIII {
+  background: rgba(255, 255, 255, 0.6784313725);
+  padding: 50px;
+  border-radius: 40px;
+  text-align: center;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.c-cardIII .icon img {
+  width: 120px;
+  height: 80px;
+}
+.c-cardIII h6 {
+  color: #1c3065;
+}
+.c-cardIII span {
+  color: #577c8e;
+}
+
 .c-modal-dialog {
   max-width: 1200px;
 }

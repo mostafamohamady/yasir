@@ -1,0 +1,26 @@
+.c-cardIII {
+  background: #ffffffad;
+  padding: 50px;
+  border-radius: 40px;
+  text-align: center;
+
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  .icon img {
+    width: 120px;
+    height: 80px;
+  }
+  h6 {
+    color: #1c3065;
+  }
+  span {
+    color: #577c8e;
+  }
+}
