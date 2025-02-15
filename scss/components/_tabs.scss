@@ -1,0 +1,46 @@
+.tab-content--edit {
+    .tab-pane {
+    //   padding: 30px;
+    //   border-radius: 40px;
+    //   background-color: #f7f9fb;
+    //   min-height: 200px;
+      position: relative;
+  
+   
+    }
+    .title {
+      display: inline-block;
+      padding-inline-end: 13px;
+      min-width: 100px;
+    }
+   
+    p {
+      font-weight: 200;
+      text-align: justify;
+      margin-top: 20px;
+    }
+  }
+
+  .nav-pills--edit {
+    .nav-link {
+      color: var(--navlink-fcolor);
+  
+        img{
+            filter: brightness(0) saturate(100%) invert(71%) sepia(6%) saturate(43%) hue-rotate(131deg) brightness(91%) contrast(86%);
+        }
+
+      &.active {
+        color: var(--navlink-activ-fcolor) !important;
+        background-color: transparent;
+  
+        position: relative;
+
+        img{
+            
+            filter: brightness(0) saturate(100%) invert(49%) sepia(58%) saturate(353%) hue-rotate(359deg) brightness(88%) contrast(91%);
+        }
+
+      }
+    }
+  }
+

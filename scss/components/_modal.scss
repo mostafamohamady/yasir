@@ -1,61 +1,29 @@
-.nav-pills--edit {
-    .nav-link {
-      color: var(--navlink-fcolor);
-  
-      &.active {
-        color: var(--navlink-activ-fcolor) !important;
-        background-color: transparent;
-  
-        position: relative;
-  
-        &::after {
-          content: "";
-          position: absolute;
-          width: 70%;
-          height: 3px;
-          background-color: var(--main-btn-background-color);
-          z-index: 100;
-          left: 50%;
-          transform: translate(-50%);
-          bottom: -1px;
-          transition: background-color 0.3s ease-in-out;
-        }
-      }
-    }
-  }
-  .tab-content--edit {
-    .tab-pane {
-      padding: 30px;
-      border-radius: 40px;
-      background-color: #f7f9fb;
-      min-height: 200px;
-      position: relative;
-  
-      h3 {
-        position: absolute;
-        top: 50%;
-  
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-    .title {
-      display: inline-block;
-      padding-inline-end: 13px;
-      min-width: 100px;
-    }
-    .amount {
-      font-size: 2rem;
-      font-weight: 400;
-    }
-    p {
-      font-weight: 200;
-      text-align: justify;
-      margin-top: 20px;
-    }
-  }
-  
 
-  .c-modal-dialog{
-    max-width: 1200px;
+
+
+.c-modal-dialog {
+  max-width: 1200px;
+  .modal-content {
+    border-radius: 2rem;
   }
+}
+
+
+
+.c-modal-body{
+position: relative;
+}
+
+.c-btn-close{
+  position: absolute;
+  left: 17px;
+  top: 22px;
+}
+.btn-close{
+  background: unset;
+  background-image: url('../imges/Group 109484.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+ 
+
+}

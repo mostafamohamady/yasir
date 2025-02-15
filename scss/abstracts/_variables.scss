@@ -1,20 +1,40 @@
 :root {
-    --main-btn-border-color: #b39d74;
-    --main-btn-background-color: #b39d74;
-    --main-btn-fcolor: #b39d74;
-    --main-btnstart-fcolor: #b39d74;
-    --main-btnprimary-fcolor: #ffffff;
-    --footer-fcolor: #3f6272;
-    --primary-fcolor: #1B3065;
-    --input-border: #d2dae3;
-    --input-box-shadow: #6c5b3e0d;
-    --input-placeholder-color: #b8c3c7;
-    --textprimary-color: #3f6272;
-    --textsecndary-color: #b39d74;
-    --navlink-fcolor: #577c8d;
-    --navlink-activ-fcolor: #b39d74;
-    --headline-border-color: #cddae0;
+  --main-btn-border-color: #b39d74;
+  --main-btn-background-color: #b39d74;
+  --main-btn-fcolor: #b39d74;
+  --main-btnstart-fcolor: #b39d74;
+  --main-btnprimary-fcolor: #ffffff;
+  --footer-fcolor: #3f6272;
+  --primary-fcolor: #1b3065;
+  --input-border: #d2dae3;
+  --input-box-shadow: #6c5b3e0d;
+  --input-placeholder-color: #b8c3c7;
+  --textprimary-color: #3f6272;
+  --textsecndary-color: #b39d74;
+  --navlink-fcolor: #b3b3b3;
+  --navlink-activ-fcolor: #b39d74;
+  --headline-border-color: #cddae0;
+}
+
+/*text classes*/
+.c-th-text-low {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.c-text-blue {
+  color: #22499c;
+}
+.c-text-black {
+  color: #261905 !important;
+}
 
 
-    
-  }
+
+/*text classes*/
+/*text font  classes*/
+
+.c-text-f-up{
+  font-size: 20px;  
+}
+/* // text font  classes*/
