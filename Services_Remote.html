@@ -101,7 +101,7 @@
         <div class="main-sec">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-12">
                 <!-- menu -->
                 <ul class="page-menu">
                   <li class="item active">
@@ -140,138 +140,14 @@
                 </ul>
                 <!-- menu -->
               </div>
-              <div class="col-md-9">
-                <!-- search result -->
-                <div class="search_result">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h3>الدوائر</h3>
-                    </div>
-                    <div class="col-md-6"></div>
-                  </div>
-
-                  <div class="input-group mt-3 input-button-container">
-                    <input
-                      type="text"
-                      class="form-control form-control-search"
-                      placeholder="بحث سريع، يُرجى كتابة أي كلمة هنا…"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-
-                  <table class="table table--edit mb-5">
-                    <thead>
-                      <tr>
-                        <th scope="col">المحكمة</th>
-                        <th scope="col">نوع الدائرة</th>
-                        <th scope="col">رقم الدائرة</th>
-                        <th scope="col">يوم الإنعقاد</th>
-                        <th scope="col">مؤشر الإنجاز</th>
-                        <th scope="col">الإجراء</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><span>المحكمة الكلية</span></td>
-                        <td><span>إداري</span></td>
-                        <td><span>08</span></td>
-                        <td><span>الأربعاء</span></td>
-                        <td class="c-table__indicator--up">
-                          <img src="imges/UP.svg" alt="img" /><span>75%</span>
-                        </td>
-                        <td>
-                          <button
-                            class="btn btn-primary form-control-inbtn px-4"
-                            type="button "
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
-                          >
-                            <img src="imges/Group 96954.svg" alt="img" /><span
-                              >عرض
-                            </span>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><span>المحكمة الكلية</span></td>
-                        <td><span>إداري</span></td>
-                        <td><span>08</span></td>
-                        <td><span>الأربعاء</span></td>
-                        <td class="c-table__indicator--down">
-                          <img src="imges/DOWN.svg" alt="img" /><span>15%</span>
-                        </td>
-                        <td>
-                          <button
-                            class="btn btn-primary form-control-inbtn px-4"
-                            type="button "
-                            data-bs-toggle="modal"
-                            data-bs-target="#indecator_negative"
-                          >
-                            <img src="imges/Group 96954.svg" alt="img" /><span
-                              >عرض
-                            </span>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><span>المحكمة الكلية</span></td>
-                        <td><span>إداري</span></td>
-                        <td><span>08</span></td>
-                        <td><span>الأربعاء</span></td>
-                        <td class="c-table__indicator--up">
-                          <img src="imges/UP.svg" alt="img" /><span>75%</span>
-                        </td>
-                        <td>
-                          <button
-                            class="btn btn-primary form-control-inbtn px-4"
-                            type="button "
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
-                          >
-                            <img src="imges/Group 96954.svg" alt="img" /><span
-                              >عرض
-                            </span>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><span>المحكمة الكلية</span></td>
-                        <td><span>إداري</span></td>
-                        <td><span>08</span></td>
-                        <td><span>الأربعاء</span></td>
-                        <td class="c-table__indicator--down">
-                          <img src="imges/DOWN.svg" alt="img" /><span>15%</span>
-                        </td>
-                        <td>
-                          <button
-                            class="btn btn-primary form-control-inbtn px-4"
-                            type="button "
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
-                          >
-                            <img src="imges/Group 96954.svg" alt="img" /><span
-                              >عرض
-                            </span>
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- // search result -->
-              </div>
+            
             </div>
           </div>
         </div>
       </main>
-
       <footer class="login-footer--inner">
         <div class="footer-container text-center">
-          <p>
-            جميع الحقوق محفوظة لـ الإدارة العامة للتنفيذ
-            <span>&copy; </span> 2024
-          </p>
+          <p>جميع الحقوق محفوظة لـ منصة يَسِّر <span>&copy; </span> 2025</p>
           <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
         </div>
       </footer>
@@ -881,26 +757,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
-      const dateInputs = document.querySelectorAll(".date-input");
-
-      dateInputs.forEach((input) => {
-        input.addEventListener("click", function () {
-          console.log("Focus event triggered");
-          if (input.showPicker) {
-            input.showPicker(); // Open date picker when input gains focus
-          }
-        });
-      });
-
-      // auto coosed modal
-      var SaveModal = document.getElementById("staticBackdropSave");
-      SaveModal.addEventListener("shown.bs.modal", function () {
-        setTimeout(function () {
-          var modalInstance = bootstrap.Modal.getInstance(SaveModal);
-          modalInstance.hide();
-        }, 5000);
-      });
-    </script>
+    <script></script>
   </body>
 </html>
