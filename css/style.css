@@ -287,6 +287,7 @@ ul {
   padding: 50px;
   border-radius: 40px;
   text-align: center;
+  display: block;
   min-height: 450px;
   display: flex;
   flex-direction: column;
@@ -294,6 +295,8 @@ ul {
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
 .c-cardIII .icon img {
   width: 120px;
@@ -304,6 +307,31 @@ ul {
 }
 .c-cardIII span {
   color: #577c8e;
+}
+.c-cardIII:hover {
+  background: #224a9c;
+  transition: all 0.3s ease-in-out;
+}
+.c-cardIII:hover ::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 8px;
+  background: var(--main-btn-border-color);
+  z-index: 1;
+  bottom: -8px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.c-cardIII:hover h6 {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.c-cardIII:hover span {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .c-modal-dialog {

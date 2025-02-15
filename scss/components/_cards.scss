@@ -3,6 +3,7 @@
   padding: 50px;
   border-radius: 40px;
   text-align: center;
+  display: block;
 
   min-height: 450px;
   display: flex;
@@ -12,6 +13,7 @@
 
   text-decoration: none;
   cursor: pointer;
+  position: relative;
 
   .icon img {
     width: 120px;
@@ -22,5 +24,33 @@
   }
   span {
     color: #577c8e;
+  }
+
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: #224a9c;
+    ::after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 8px;
+      background: var(--main-btn-border-color);
+      z-index: 1;
+      bottom: -8px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    h6 {
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+    span {
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+    transition: all 0.3s ease-in-out;
   }
 }
