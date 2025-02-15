@@ -16,13 +16,40 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="logocontainer text-center">
-                  <img src="imges/inerlogo.svg" alt="logo" />
-                  <h6>الادارة العامة للتنفيذ</h6>
-
-                  <div class="text-container"><span>وزارة العدل</span></div>
+                  <img src="imges/Yasir_Logo_SVG.svg" alt="logo" />
+                  <h6 class="text-center mb-5 mt-3">
+                    خدمات <span class="text-gradint">القضاة</span>
+                  </h6>
                 </div>
               </div>
               <div class="col-md-9">
+               <div class="d-flex justify-content-between ">
+                <div class="dropdown c-dropdown">
+                  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row">
+                      <div class="col-3">
+                        <img class="c-dropdown__img" src="imges/User_Img.svg" alt="" srcset="">
+                      </div>
+                      <div class="col-9">
+                        <div class="mb-2">
+                          <span class="c-text-light">مرحبا</span>
+                          <span>محمد خالد</span>
+                        </div>
+                        <div>
+                          <span class="c-dropdown__title">رئيس القضاة</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </a>
+                
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                  </ul>
+                </div>
+
                 <div class="notificatio-profile">
                   <div class="notifiction">
                     <button>
@@ -30,10 +57,23 @@
                       <span class="noti-count">1</span>
                     </button>
                   </div>
-                  <div class="profile">
-                    <img src="imges/User_Img.png" alt="profile-img" />
+                  <div class="logout">
+                    <button >
+                      <span class="">تسجيل خروج</span>
+                      <img src="imges/Group 56420.svg"  class="mx-1" srcset="" />
+                     
+                    </button>
                   </div>
+                  <div class="lang">
+                    <button>
+                      <div class="language">
+                        English
+                      </div>
+                    </button>
+                  </div>
+                 
                 </div>
+               </div>
               </div>
             </div>
           </div>
@@ -47,32 +87,43 @@
               <div class="col-md-3">
                 <!-- menu -->
                 <ul class="page-menu">
-               
                   <li class="item  active">
                     <a href="e3lan.html">
                       <div class="icon">
-                        <img src="imges/Group 108028.svg" alt="" />
+                        <img src="imges/Group 98944.svg" alt="" />
                       </div>
                       <div class="list-title">
-                        <h6>جديد</h6>
-                        <span>إعلانات جديدة</span>
+                        <h6>تحضير الجلسات</h6>
+                        <span>عرض جميع الدوائر</span>
                       </div>
-                      <div class="count">39</div>
+                    
                     </a>
                   </li>
                   <li class="item  ">
                     <a href="el7spa.html">
                       <div class="icon">
-                        <img src="imges/Group 108029.svg" alt="" />
+                        <img src="imges/Icon_02.svg" alt="" />
                       </div>
                       <div class="list-title">
-                        <h6>تم الإعلان</h6>
-                        <span>إعلانات تم إرسالها</span>
+                        <h6>الحاسبة العمالية</h6>
+                        <span>حساب المستحقات</span>
                       </div>
-                      <div class="count">39</div>
+                  
                     </a>
                   </li>
-              
+                  <li class="item  ">
+                    <a href="el7spa.html">
+                      <div class="icon">
+                        <img src="imges/goldsearchicon.svg" alt="" />
+                      </div>
+                      <div class="list-title">
+                        <h6>بحث</h6>
+                        <span>الأحكام والإصدارات والتشريعات</span>
+                      </div>
+                  
+                    </a>
+                  </li>
+               
                 </ul>
                 <!-- menu -->
               </div>
@@ -81,9 +132,7 @@
                 <div class="search_result">
                   <div class="row">
                     <div class="col-md-6">
-                    <h3>الإعلانات الجديدة</h2>
-                     <h6 class="text-secondary my-2">٥ إعلانات</h6> 
-
+                    <h3>الدوائر</h2>
                     </div>
                     <div class="col-md-6   ">
                     
@@ -93,7 +142,7 @@
 
 
                 
-                  <div class="input-group mt-5 input-button-container">
+                  <div class="input-group mt-3 input-button-container">
                       <input
                         type="text"
                         class="form-control form-control-search"
@@ -107,10 +156,10 @@
                   <table class="table table--edit mb-5">
                     <thead>
                       <tr>
-                        <th scope="col">رقم الإعلان</th>
-                        <th scope="col">المعلن</th>
-                        <th scope="col">المعلن إليه</th>
-                        <th scope="col">المبلغ</th>
+                        <th scope="col">المحكمة</th>
+                        <th scope="col">نوع الدائرة</th>
+                        <th scope="col">رقم الدائرة</th>
+                        <th scope="col">مؤشر الإنجاز</th>
                         <th scope="col">الإجراء</th>
                        
                      
@@ -120,23 +169,56 @@
                       <tr>
                         
                           <td>11</td>
-                          <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
-                          <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
-                          
-                          <td><span>3000.000</span><span class="currency-flag ">دينار كويتي <img  src="imges/kuwait.svg" alt="flag"></span> </td>
-                        
-                          <td>إلكتروني</td>
+                          <td ><span>المحكمة الكلية</span></td>
+                          <td ><span>إداري</span></td>
+                          <td ><span>08</span></td>
+                          <td ><span>الأربعاء</span></td>
+                          <td class="c-table__indicator--up"><img src="imges/UP.svg" alt="img"><span>75%</span></td>
                           <td>
-                            
-                            <button class="btn btn-primary form-control-inbtn  px-4 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> الإعلان  </button>
+                            <button class="btn btn-primary form-control-inbtn  px-4 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="imges/Group 96954.svg" alt="img"><span>عرض </span></button>
                           </td>
-                         
-
-                          
-                      
+                      </tr>
+                      <tr>
+                        
+                          <td>11</td>
+                          <td ><span>المحكمة الكلية</span></td>
+                          <td ><span>إداري</span></td>
+                          <td ><span>08</span></td>
+                          <td ><span>الأربعاء</span></td>
+                          <td class="c-table__indicator--down"><img src="imges/DOWN.svg" alt="img"><span>15%</span></td>
+                          <td>
+                            <button class="btn btn-primary form-control-inbtn  px-4 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="imges/Group 96954.svg" alt="img"><span>عرض </span></button>
+                          </td>
+                      </tr>
+                      <tr>
+                        
+                          <td>11</td>
+                          <td ><span>المحكمة الكلية</span></td>
+                          <td ><span>إداري</span></td>
+                          <td ><span>08</span></td>
+                          <td ><span>الأربعاء</span></td>
+                          <td class="c-table__indicator--up"><img src="imges/UP.svg" alt="img"><span>75%</span></td>
+                          <td>
+                            <button class="btn btn-primary form-control-inbtn  px-4 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="imges/Group 96954.svg" alt="img"><span>عرض </span></button>
+                          </td>
+                      </tr>
+                      <tr>
+                        
+                          <td>11</td>
+                          <td ><span>المحكمة الكلية</span></td>
+                          <td ><span>إداري</span></td>
+                          <td ><span>08</span></td>
+                          <td ><span>الأربعاء</span></td>
+                          <td class="c-table__indicator--down"><img src="imges/DOWN.svg" alt="img"><span>15%</span></td>
+                          <td>
+                            <button class="btn btn-primary form-control-inbtn  px-4 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="imges/Group 96954.svg" alt="img"><span>عرض </span></button>
+                          </td>
                       </tr>
                      
+
+
                     </tbody>
+
                   </table>
 
                 
@@ -184,123 +266,57 @@
 
        <!-- Modal -->
       <div class="modal fade  modal--edit" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered c-modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title " id="exampleModalLabel"><img src="imges/E3lan_Icon.svg" alt=""> <span> التنفيذ</span></h5>
+              <h5 class="modal-title " id="exampleModalLabel"><img src="imges/E3lan_Icon.svg" alt=""> <span> SSS</span></h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form action="#">
-              <h3 class="text-center">حالة الإعلان</h3>
-              <p class="text-center " >رقم الإعلان <span class="text-secondary ">9675343</span></p>
-              <div class="frm-box">
-              
-                <div class="row mb-2" >
-                  <div class="col-4 align-self-center"><img src="imges/Group 107920.svg" alt=""> <label for="">نتيجة الإعلان</label></div>
-                  <div class="col-8">
-
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>اختر </option>
-                      <option value="1">معاد</option>
-                      <option value="2">العاصمة</option>
-                      <option value="3">العاصمة</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-4 align-self-center"><img src="imges/Group 107872.svg" alt=""> <label for="">السبب</label></div>
-                  <div class="col-8">
-
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>اختر </option>
-                      <option value="1">لم يُستدل</option>
-                      <option value="2">إدارة تنفيذ العاصمة</option>
-                      <option value="3">إدارة تنفيذ العاصمة</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-4 align-self-center"><img src="imges/Path 67658.svg" alt=""> <label for="">التاريخ</label></div>
-                  <div class="col-8">
-                    
-                    <input type="date" class="form-control date-input" id="exampleInputdate" >
-                  
-                  </div>
-                </div>
-                
-
-
-
-              </div>
-
-
-
-            </form>
-              
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
-              <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropSave" data-bs-dismiss="modal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >حفظ   </button>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- // Modal -->
-
-
-       <!-- Modal -->
-       <div class="modal fade  modal--edit" id="staticBackdropSave" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-centered--save">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title " id="exampleModalLabel"><img src="imges/E3lan_Icon.svg" alt=""> <span> تم الحفظ</span></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="modal-body">
-                <!-- animation  icon-->
-
-                 
-                <div class=" d-flex justify-content-center">
-                    
-                  <img  class="modal__animation-icon-success" src="imges/MOJ_Tanfez_V1_Success.gif"  alt="" srcset="">
-                  
-                  </div>
-                <!--  // animation  icon-->
-             
-             
-              <p class="text-center " >رقم الإعلان <span class="text-secondary ">9675343</span></p>
-              <h3 class="text-center text-secondary">حالة الإعلان</h3>
-              <p class="text-center">سيتم إغلاق النافذة تلقائياً بعد لحظات</p>
-            </div>
+              <ul class="nav nav-pills nav-pills--edit  mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">المحكمة الكلية</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">محكمة الاستئناف</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">محكمة التمييز</button>
+                </li>
            
+              </ul>
+              <div class="tab-content tab-content--edit" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="mb-3"><span class="text-secondary title ">نوع الحكم</span> <span class=" value">إبتدائي</span></div>
+                      <div class="mb-3"><span class="text-secondary title ">تاريخ الحكم</span> <span class="value">10 سبتمبر 2024</span></div>
+                      <div class="mb-3"><span class="text-secondary title ">المبلغ</span> <span class="text-secondary value amount">750 د.ك</span></div>
+
+                    </div>
+                    <div class="col md-7">
+                      <div class=" head-line  "><span class="text-secondary  head-title">مضمون الحكم</span> </div>
+                      <p >حكمت المحكمة بإدانة المتهم بارتكاب جريمة القتل العمد مع سبق الإصرار والترصد، وذلك بعد ثبوت الأدلة وشهادة الشهود. وبناءً على ذلك، تقرر المحكمة معاقبة المتهم بالإعدام شنقًا وفقًا للمادة (150) من قانون الجزاء الكويتي، مع إلزامه بدفع الدية الشرعية لورثة المجني عليه. </p>
+
+                    </div>
+
+                  </div>
+                 
+                    
+                  
+                  </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><h3>لا يوجد بيانات</h3></div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0"><h3>لا يوجد بيانات</h3></div>
+               
+              </div>
+              
+            </div>
+          
           </div>
         </div>
       </div>
       <!-- // Modal -->
 
-
-     
-
-
-
-
-      <footer class="login-footer--inner">
-        <div class="footer-container text-center">
-          <p>
-            جميع الحقوق محفوظة لـ الإدارة العامة للتنفيذ
-            <span>&copy; </span> 2024
-          </p>
-          <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
-        </div>
-      </footer>
-
-
-    
-
-     </div>
 
 
 
@@ -329,7 +345,7 @@
 
     
 const dateInputs = document.querySelectorAll('.date-input');
-console.log(dateInputs);
+
 dateInputs.forEach(input => {
   input.addEventListener('click', function() {
     console.log('Focus event triggered');

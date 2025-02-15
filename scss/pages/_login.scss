@@ -42,7 +42,7 @@
   color: #3f6272;
 }
 
-.login-text-gradint {
+.text-gradint{
   background: #22499d;
   background: linear-gradient(to top right, #22499d 22%, #c2cce5 100%);
   -webkit-background-clip: text;
@@ -59,17 +59,16 @@ a.back_home {
   margin-inline-start: 15px;
 }
 
-.loginpage{
+.loginpage {
   background-image: url(../imges/Yasir_Main_BG.svg);
   background-repeat: repeat-y;
   background-size: contain;
- }
- .login-text-gradint{
+}
+.text-gradint {
   position: relative;
   z-index: 100;
-
- }
- .login-text-gradint::after{
+}
+.text-gradint::after {
   content: "";
   background-image: url(../imges/Yasir_Text_Highlight.svg);
   background-repeat: no-repeat;
@@ -81,10 +80,8 @@ a.back_home {
   width: 100%;
   height: 100%;
   display: inline-block;
- }
-
-.p-help{
-  color:#3D5862 ;
-  
 }
- 
+
+.p-help {
+  color: #3d5862;
+}

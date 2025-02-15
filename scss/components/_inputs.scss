@@ -24,3 +24,11 @@
       color: var(--input-placeholder-color);
     }
   }
+
+  .form-control-search{
+    background-image:url('../imges/Search_Icon.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+    padding-inline-start: 60px;
+
+  }
