@@ -14,14 +14,17 @@
           <div class="header pt-4">
             <div class="row justify-content-md-between">
               <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-                <a class="back_home"> <img class="mx-2" src="imges/Group 109142.svg" /> عودة الى المنصة </a>
+                <a class="back_home">
+                  <img class="mx-2" src="imges/Group 109142.svg" /> عودة الى
+                  المنصة
+                </a>
                 <a class="">
                   <img src="imges/Yasir_Logo_Horizontal.svg" alt=""
                 /></a>
               </div>
               <div class="col-12 col-md-6 col-lg-6 col-xl-4">
                 <a class=""> <img src="imges/MOJ_Logo.svg" alt="" /></a>
-                <a class="btn-language ">English</a>
+                <a class="btn-language">English</a>
               </div>
             </div>
           </div>
@@ -71,7 +74,7 @@
                   />
                 </div>
               </div>
-              <p class="text-center  text-help my-5">
+              <p class="text-center text-help my-5">
                 هل تواجه أي مشكلة؟
 
                 <a href="#" class="text-secondary text-decoration-none mx-2"
@@ -80,8 +83,10 @@
               </p>
               <div class="text-center">
                 <button
-                  type="submit"
+                  type="button"
                   class="btn btn-primary btn-primary--enter mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
                 >
                   دخول
                   <img
@@ -93,7 +98,6 @@
             </form>
           </div>
         </div>
-       
       </div>
 
       <footer class="login-footer">
@@ -104,8 +108,64 @@
       </footer>
     </div>
 
+    <!-- Modal  indecator positve-->
+    <div
+      class="modal fade modal--edit c-modal-login"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered c-modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body c-modal-body">
+            <button
+              type="button"
+              class="btn-close c-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <button
+              type="button"
+              class="btn-modal-back"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              رجوع <img class="mx-2" src="imges/Group 109142.svg" />
+            </button>
+
+            <div class="row mt-5">
+              <div class="col-md-4">
+                <img class="mx-2" src="imges/yasirogo2.svg" />
+                <h5>تسجيل الدخول</h5>
+                <p>يُرجى إختيار طريقة التحقق لإكمال تسجيل الدخول</p>
+              </div>
+              <div class="col-md-4">
+                <button type="button">
+                  <img src="imges/Group 96757.svg" alt="" />
+                  <h6>التحقق بواسطة تطبيق هويتي</h6>
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button type="button">
+                  <img src="imges/Group 109462.svg" alt="" />
+                  <h6>التحقق بواسطة تطبيق هويتي</h6>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // Modal -->
+
     <div class="live_chat">
-      <button class="btn-live-chat" > <img src="imges/livechat.svg" alt=""></button>
+      <button class="btn-live-chat">
+        <img src="imges/livechat.svg" alt="" />
+      </button>
     </div>
 
     <script src="js/gsap.min.js"></script>
@@ -113,26 +173,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
-      /* show hide password*/
-      let showPassBtn = document.querySelector("#showPasswprd");
-      let inputPassword = document.querySelector("#inputPass");
-      let showPassIcon = document.querySelector("#showPassIcon");
-      let hidePassIcon = document.querySelector("#hidePassIcon");
-
-      hidePassIcon.style.display = "none";
-      showPassBtn.addEventListener("click", function () {
-        if (inputPassword.type === "password") {
-          inputPassword.type = "text";
-          showPassIcon.style.display = "none";
-          hidePassIcon.style.display = "block";
-        } else {
-          inputPassword.type = "password";
-          showPassIcon.style.display = "block";
-
-          hidePassIcon.style.display = "none";
-        }
-      });
-    </script>
+    <script></script>
   </body>
 </html>

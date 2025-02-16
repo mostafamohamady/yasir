@@ -341,6 +341,10 @@ ul {
   border-radius: 2rem;
 }
 
+.c-modal-login .c-modal-dialog {
+  max-width: 1000px;
+}
+
 .c-modal-body {
   position: relative;
 }
@@ -378,9 +382,6 @@ ul {
   border: 1px solid var(--input-border);
   box-shadow: 0px 7px 9px var(--input-box-shadow);
   position: relative;
-}
-.form-control::-moz-placeholder {
-  color: var(--input-placeholder-color);
 }
 .form-control::placeholder {
   color: var(--input-placeholder-color);
