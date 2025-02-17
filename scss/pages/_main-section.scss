@@ -1,0 +1,37 @@
+.main-title {
+    font-size: 4rem;
+    span {
+        position: relative;
+        background: linear-gradient(to top right, #22499d 22%, #c2cce5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::after {
+            content: '';
+            background-image: url(../imges/Yasir_Text_Highlight.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: -25%;
+            right: 0;
+            z-index: 1000;
+            width: 130%;
+            height: 1rem;
+        }
+    }
+}
+
+.c-text-blue {
+    color: #1a3065;
+}
+
+.c-text-blue-light {
+    color: #5e6d8c;
+}
+
+.section-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
