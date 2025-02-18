@@ -1,34 +1,29 @@
-
-
-
 .c-modal-dialog {
-  max-width: 1200px;
-  .modal-content {
-    border-radius: 2rem;
-  }
+    max-width: 1200px;
+    .modal-content {
+        border-radius: 2rem;
+    }
 }
 
-.c-modal-login{ 
-  .c-modal-dialog {
-    max-width: 1000px;
-  }
-
+.c-modal-login {
+    .c-modal-dialog {
+        max-width: 1000px;
+    }
 }
 
-.c-modal-body{
-position: relative;
+.c-modal-body {
+    position: relative;
+    padding: 2.5rem;
 }
 
-.c-btn-close{
-  position: absolute;
-  left: 17px;
-  top: 22px;
+.c-btn-close {
+    position: absolute;
+    left: 17px;
+    top: 22px;
 }
-.btn-close{
-  background: unset;
-  background-image: url('../imges/Group 109484.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
- 
-
+.btn-close {
+    background: unset;
+    background-image: url('../imges/Group 109484.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }

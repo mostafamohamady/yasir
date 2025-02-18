@@ -1,199 +1,273 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="loginpage">
-      <header>
-        <div class="container">
-          <div class="header pt-4">
-            <div class="row justify-content-md-between">
-              <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-                <a class="back_home">
-                  <img class="mx-2" src="imges/Group 109142.svg" /> عودة الى
-                  المنصة
-                </a>
-                <a class="">
-                  <img src="imges/Yasir_Logo_Horizontal.svg" alt=""
-                /></a>
-              </div>
-              <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-                <a class=""> <img src="imges/MOJ_Logo.svg" alt="" /></a>
-                <a class="btn-language">English</a>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="loginpage">
+    <header>
+      <div class="container">
+        <div class="header pt-4">
+          <div class="row justify-content-md-between">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+              <a class="back_home">
+                <img class="mx-2" src="imges/Group 109142.svg" /> عودة الى
+                المنصة
+              </a>
+              <a class="">
+                <img src="imges/Yasir_Logo_Horizontal.svg" alt="" /></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+              <a class=""> <img src="imges/MOJ_Logo.svg" alt="" /></a>
+              <a class="btn-language">English</a>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <div class="login-container">
-        <div class="login-page">
-          <div class="logo-container">
-            <img src="imges/Group 109042.svg" alt="" />
-          </div>
+    <div class="login-container">
+      <div class="login-page">
+        <div class="logo-container">
+          <img src="imges/Group 109042.svg" alt="" />
+        </div>
 
-          <div class="login-form">
-            <form action="#" method="post">
-              <h2 class="text-center mb-5 mt-4">
-                خدمات <span class="text-gradint">القضاة</span>
-              </h2>
-              <h5 class="text-center mb-5">تسجيل الدخول</h5>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control form-control-uname"
-                  placeholder="اسم المستخدم"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
+        <div class="login-form">
+          <form action="#" method="post">
+            <h2 class="text-center mb-5 mt-4">
+              خدمات <span class="text-gradint">القضاة</span>
+            </h2>
+            <h5 class="text-center mb-5">تسجيل الدخول</h5>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control form-control-uname" placeholder="اسم المستخدم"
+                aria-label="Username" aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group mb-3">
+              <input type="password" id="inputPass" class="form-control form-control-password" placeholder="كلمةالمرور"
+                aria-label="Password" aria-describedby="basic-addon1" />
+              <div class="show-password" id="showPasswprd">
+                <img id="showPassIcon" src="imges/showpass.svg" alt="show pass" />
+                <img id="hidePassIcon" src="imges/hidepass.svg" alt="show pass" />
               </div>
-              <div class="input-group mb-3">
-                <input
-                  type="password"
-                  id="inputPass"
-                  class="form-control form-control-password"
-                  placeholder="كلمةالمرور"
-                  aria-label="Password"
-                  aria-describedby="basic-addon1"
-                />
-                <div class="show-password" id="showPasswprd">
-                  <img
-                    id="showPassIcon"
-                    src="imges/showpass.svg"
-                    alt="show pass"
-                  />
-                  <img
-                    id="hidePassIcon"
-                    src="imges/hidepass.svg"
-                    alt="show pass"
-                  />
-                </div>
-              </div>
-              <p class="text-center text-help my-5">
-                هل تواجه أي مشكلة؟
+            </div>
+            <p class="text-center text-help my-5">
+              هل تواجه أي مشكلة؟
 
-                <a href="#" class="text-secondary text-decoration-none mx-2"
-                  >اطلب المساعدة <img src="imges/help.svg" alt="help-icon"
-                /></a>
-              </p>
-              <div class="text-center">
-                <button
-                  type="button"
-                  class="btn btn-primary btn-primary--enter mb-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
-                >
-                  دخول
-                  <img
-                    src="imges/MOJ_Login_Animation.gif"
-                    alt="login animation icon "
-                  />
-                </button>
-              </div>
-            </form>
-          </div>
+              <a href="#" class="text-secondary text-decoration-none mx-2">اطلب المساعدة <img src="imges/help.svg"
+                  alt="help-icon" /></a>
+            </p>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary btn-primary--enter mb-3" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                دخول
+                <img src="imges/MOJ_Login_Animation.gif" alt="login animation icon " />
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-
-      <footer class="login-footer">
-        <div class="footer-container text-center">
-          <p>جميع الحقوق محفوظة لـ منصة يَسِّر<span>&copy; </span> 2025</p>
-          <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
-        </div>
-      </footer>
     </div>
 
-    <!-- Modal  indecator positve-->
-    <div
-      class="modal fade modal--edit c-modal-login"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered c-modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body c-modal-body">
-            <button
-              type="button"
-              class="btn-close c-btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <footer class="login-footer">
+      <div class="footer-container text-center">
+        <p>جميع الحقوق محفوظة لـ منصة يَسِّر<span>&copy; </span> 2025</p>
+        <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
+      </div>
+    </footer>
+  </div>
 
-            <button
-              type="button"
-              class="btn-modal-back"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              رجوع <img class="mx-2" src="imges/Group 109142.svg" />
+  <!-- Modal  indecator positve-->
+  <div class="modal fade modal--edit c-modal-login" id="staticBackdrop" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered c-modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body c-modal-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn-modal-back btn" id="modalBackBtn">
+              <img class="me-2 w-25" src="imges/Group 109142.svg" />
+              <span>رجوع</span>
             </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
 
-            <div class="row mt-5">
-              <div class="col-md-4">
-                <img class="mx-2" src="imges/yasirogo2.svg" />
-                <h5>تسجيل الدخول</h5>
-                <p>يُرجى إختيار طريقة التحقق لإكمال تسجيل الدخول</p>
+          <div class="row mt-5" id="checkContainer">
+            <div class="col-md-4">
+              <div class="d-flex flex-column gap-3">
+                <img class="mx-2 w-25" src="imges/yasirogo2.svg" />
+                <h5 class="fs-2 fw-normal">تسجيل الدخول</h5>
+                <p class="fw-light">يُرجى إختيار طريقة التحقق لإكمال تسجيل الدخول</p>
               </div>
-              <div class="col-md-4">
-                <button type="button">
-                  <img src="imges/Group 96757.svg" alt="" />
-                  <h6>التحقق بواسطة تطبيق هويتي</h6>
-                </button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="popup-tab-btn" id="identityAppBtn">
+                <img src="imges/Group 96757.svg" alt="" />
+                <h6>
+                  <p>التحقق بواسطة</p>
+                  <p>تطبيق هويتي</p>
+                </h6>
+              </button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="popup-tab-btn" id="googleAuthenticatorBtn">
+                <img src="imges/Group 109462.svg" alt="" />
+                <h6>
+                  <p>التحقق بواسطة</p>
+                  <p>Google Authenticator</p>
+                </h6>
+              </button>
+            </div>
+          </div>
+          <div class="identity-check mt-5 d-none" id="identityCheck">
+            <div class="row">
+              <div class="col-lg-9">
+                <div class="d-flex gap-3 align-items-center">
+                  <img src="imges/civilid.svg" alt="">
+                  <p class="c-text-blue m-0">التحقق بواسطة تطبيق هويتي</p>
+                </div>
+                <p class="fs-1">
+                  تم إرسال طلب مصادقة إلى تطبيق
+                  <span class="c-text-secondary">تطبيق هويتي</span>
+                  يُرجى الموافقة
+                </p>
               </div>
-              <div class="col-md-4">
-                <button type="button">
-                  <img src="imges/Group 109462.svg" alt="" />
-                  <h6>التحقق بواسطة تطبيق هويتي</h6>
-                </button>
+              <div class="col-lg-3 d-flex justify-content-center">
+                <img class="w-25" src="imges/civilid.svg" alt="">
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+              <img src="imges/HID_Mobile.svg" alt="">
+            </div>
+          </div>
+          <div class="google-check mt-5 d-none" id="googleCheck">
+            <div class="row">
+              <div class="col-lg-9">
+                <div class="d-flex gap-3 align-items-center">
+                  <img src="imges/Google_Icon.svg" alt="">
+                  <p class="c-text-blue m-0">التحقق بواسطة جوجل</p>
+                </div>
+                <p class="fs-3 mb-0">
+                  يُرجى إدخال الكود الذي تم إرساله
+                <p class="c-text-secondary fs-3">Google Authenticator</p>
+                </p>
+              </div>
+              <div class="col-lg-3 d-flex justify-content-center">
+                <img class="w-25" src="imges/civilid.svg" alt="">
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+              <div class="otp-container">
+                <input type="text" placeholder="0" maxlength="0" autofocus>
+                <input type="text" placeholder="0" maxlength="0">
+                <input type="text" placeholder="0" maxlength="0">
+                <input type="text" placeholder="0" maxlength="0">
+                <input type="text" placeholder="0" maxlength="0">
+                <input type="text" placeholder="0" maxlength="0">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- // Modal -->
+  </div>
+  <!-- // Modal -->
 
-    <div class="live_chat">
-      <button class="btn-live-chat">
-        <img src="imges/livechat.svg" alt="" />
-      </button>
-    </div>
+  <div class="live_chat">
+    <button class="btn-live-chat">
+      <img src="imges/livechat.svg" alt="" />
+    </button>
+  </div>
 
-    <script src="js/gsap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /* show hide password*/
+    let showPassBtn = document.querySelector("#showPasswprd");
+    let inputPassword = document.querySelector("#inputPass");
+    let showPassIcon = document.querySelector("#showPassIcon");
+    let hidePassIcon = document.querySelector("#hidePassIcon");
+    let googleAuthenticatorBtn = document.querySelector("#googleAuthenticatorBtn");
+    let identityAppBtn = document.querySelector("#identityAppBtn");
+    let checkContainer = document.querySelector("#checkContainer");
+    let identityCheck = document.querySelector("#identityCheck");
+    let googleCheck = document.querySelector("#googleCheck");
+    let modalBackBtn = document.querySelector("#modalBackBtn");
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      /* show hide password*/
-      let showPassBtn = document.querySelector("#showPasswprd");
-      let inputPassword = document.querySelector("#inputPass");
-      let showPassIcon = document.querySelector("#showPassIcon");
-      let hidePassIcon = document.querySelector("#hidePassIcon");
+    hidePassIcon.style.display = "none";
+    showPassBtn.addEventListener("click", function () {
+      if (inputPassword.type === "password") {
+        inputPassword.type = "text";
+        showPassIcon.style.display = "none";
+        hidePassIcon.style.display = "block";
+      } else {
+        inputPassword.type = "password";
+        showPassIcon.style.display = "block";
 
-      hidePassIcon.style.display = "none";
-      showPassBtn.addEventListener("click", function () {
-        if (inputPassword.type === "password") {
-          inputPassword.type = "text";
-          showPassIcon.style.display = "none";
-          hidePassIcon.style.display = "block";
-        } else {
-          inputPassword.type = "password";
-          showPassIcon.style.display = "block";
+        hidePassIcon.style.display = "none";
+      }
+    });
 
-          hidePassIcon.style.display = "none";
+
+    googleAuthenticatorBtn.addEventListener("click", function () {
+      checkContainer.classList.add('d-none');
+      googleCheck.classList.remove('d-none');
+    });
+
+    identityAppBtn.addEventListener("click", function () {
+      checkContainer.classList.add('d-none');
+      identityCheck.classList.remove('d-none');
+    });
+
+    modalBackBtn.addEventListener("click", function () {
+      checkContainer.classList.remove('d-none');
+      googleCheck.classList.add('d-none');
+      identityCheck.classList.add('d-none');
+    });
+
+
+    const element = document.querySelector(".otp-container");
+    const regex = /^[a-zA-Z0-9]$/; //Customize the allowed input values
+
+    element.addEventListener("keydown", e => {
+      if (e.ctrlKey || e.altKey) return;
+      if (
+        regex.test(e.key) ||
+        e.code === "Backspace" ||
+        e.code === "Delete" ||
+        e.code === "ArrowLeft" ||
+        e.code === "ArrowRight"
+      ) {
+        if (!(e.code === "ArrowLeft" || e.code === "ArrowRight")) {
+          e.target.value =
+            e.code === "Backspace" || e.code === "Delete" ? "" : e.key;
         }
-      });
-    </script>
+        e.code === "Backspace" || e.code === "ArrowLeft"
+          ? e.target.previousElementSibling?.focus()
+          : e.target.nextElementSibling?.focus();
+      }
+    });
 
-    <script></script>
-  </body>
+    element.addEventListener("paste", e => {
+      const parent = e.target.parentElement;
+      const code = e.clipboardData
+        ?.getData("text")
+        .split("", parent.childElementCount);
+      let child = parent.firstElementChild;
+      code.forEach((char) => {
+        child.value = regex.test(char) ? char : "";
+        child = child.nextElementSibling;
+        child?.focus();
+      });
+    });
+
+
+  </script>
+
+</body>
+
 </html>
