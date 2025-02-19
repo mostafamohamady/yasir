@@ -47,7 +47,11 @@
     background: linear-gradient(to top right, #22499d 22%, #c2cce5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: relative;
 }
+
+
+
 
 a.back_home {
     color: #1a3065;
@@ -68,7 +72,7 @@ a.back_home {
     position: relative;
     z-index: 100;
 }
-.login-text-gradint::after {
+.text-gradint::after {
     content: '';
     background-image: url(../imges/Yasir_Text_Highlight.svg);
     background-repeat: no-repeat;
